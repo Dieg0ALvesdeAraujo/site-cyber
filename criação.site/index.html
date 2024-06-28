@@ -18,37 +18,40 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <section id="produtos">
             <h2>Nossos Produtos</h2>
-            
-            <div class="produto"></div>
-            <h3>Raspberry Pi 4</h3>
-            <img src="imagens/Raspberry_Pi4.png"/>
-            <p>Descrição: O Raspberry Pi é um computador de placa única compacto e acessível, utilizado em projetos educacionais, de IoT e em aplicações diversas que requerem uma solução computacional pequena e versátil.</p>
-            <p>Preço: R$258,00</p>
-            <button onclick="adicionarAocarrinho('Raspberry Pi 4')">Adicionar ao Carrinho</button>
-            
-           <div class="produto">
-            <h3>flipper zero</h3>
-            <img src= "imagens/flipperzero"/>
-            <p>Descrição: Um aparelho para entusiastas da area de cyber segurança cujo intuito desenvolver suas habilidades usando o hardware hacking</p>
-            <p>Preço: R$320,00</p>
-            <button onclick="adicionarAocarrinho('Flipper zero')">Adicionar ao Carrinho</button>
-           </div>
+            <div class="produto">
+                <h3>Raspberry Pi 4</h3>
+                <img src="imagens/Raspberry_Pi4.png"/>
+                <p>Descrição: O Raspberry Pi é um computador de placa única compacto e acessível, utilizado em projetos educacionais, de IoT e em aplicações diversas que requerem uma solução computacional pequena e versátil.</p>
+                <p>Preço: R$258,00</p>
+                <button onclick="adicionarAocarrinho('Raspberry Pi 4')">Adicionar ao Carrinho</button>
+            </div>
 
-           
-
+            <div class="produto">
+                <h3>Flipper Zero</h3>
+                <img src="imagens/flipperzero.png"/>
+                <p>Descrição: Um aparelho para entusiastas da area de cyber segurança cujo intuito desenvolver suas habilidades usando o hardware hacking</p>
+                <p>Preço: R$320,00</p>
+                <button onclick="adicionarAocarrinho('Flipper zero')">Adicionar ao Carrinho</button>
+            </div>
         </section>
+
         <section id="carrinho">
             <h2>Seu Carrinho</h2>
-             <div>"item-carrinhos"</div>
-             <h3></h3>
+            <div class="item-carrinho">
+                <!-- Aqui serão listados os itens do carrinho dinamicamente -->
+            </div>
+            <h3>Total: </h3>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2024 Mundo da Defesa e Ataque. Todos os direitos reservados.</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
