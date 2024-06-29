@@ -1,12 +1,11 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
     background-color: #f4f4f4;
 }
 
 header {
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
     padding: 1em 0;
     text-align: center;
@@ -15,12 +14,12 @@ header {
 main {
     padding: 1em;
     margin: 0 auto;
-    max-width: 800px;
+    padding: #fff;
     background-color: #fff;
 }
 
 section {
-    margin-bottom: 2em;
+    margin-bottom: 3em;
 }
 
 form {
@@ -32,18 +31,21 @@ label {
     margin-bottom: 0.5em;
 }
 
-input[type="text"] {
-    padding: 0.5em;
-    font-size: 1em;
-    width: 100%;
-    box-sizing: border-box;
+button {
+  padding: 0.5em 1em;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s ease;
 }
 
 button {
     padding: 0.5em 1em;
     font-size: 1em;
     cursor: pointer;
-    background-color: #007bff;
+    background-color: #0056b3
     color: #fff;
     border: none;
 }
