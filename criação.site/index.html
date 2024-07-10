@@ -13,48 +13,43 @@
     <h1>Mundo da Defesa e Ataque - Loja Online</h1>
     <nav>
       <ul>
-
-        <li><a href="Início">Início</a></li>
-        <li><a href="Produtos">Produtos</a></li>
-        <li><a href="Carrinho">Carrinho</a></li>
-        <li><a href="Login">Login</a></li>
-
+        <li><a href="#Início">Início</a></li>
+        <li><a href="#Produtos">Produtos</a></li>
+        <li><a href="#Carrinho">Carrinho</a></li>
+        <li><a href="#Login">Login</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section id="Início">
-      <h2>seja bem-vindo ao nosso site</h2>
-      <!-- conteudo a seção início -->
+      <h2>Seja bem-vindo ao nosso site</h2>
     </section>
 
     <section id="Produtos">
       <h2>Nossos Produtos</h2>
-      <!-- conteudo da seção produtos -->
       <div class="produto">
         <h3>Raspberry Pi 4</h3>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIXa4W6fgaDXmTPXXulARyThgMKPcF4tmdgK3yJFi7-7___dyF0e4haHIifkkx4ShhqSY&usqp=CAU" alt="Raspberry">
         <p>Descrição: O Raspberry Pi é um computador de placa única compacto e acessível, utilizado em projetos educacionais, de IoT e em aplicações diversas que requerem uma solução computacional pequena e versátil.</p>
         <p>Preço: R$258,00</p>
-        <button onclick="adicionaraocarrinho('Raspberry Pi 4')">Adicionar ao Carrinho</button>
+        <button onclick="adicionarAoCarrinho('Raspberry Pi 4', 258.00, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIXa4W6fgaDXmTPXXulARyThgMKPcF4tmdgK3yJFi7-7___dyF0e4haHIifkkx4ShhqSY&usqp=CAU')">Adicionar ao Carrinho</button>
       </div>
 
       <div class="produto">
         <h3>Flipper Zero</h3>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvxWU_NCrAI571bRMdTnhoCh8SA5sI17gP1w&s" alt="flippwezero">
-        <p>Descrição: Um aparelho para entusiastas da area de cyber segurança cujo intuito desenvolver suas habilidades usando o hardware hacking</p>
+        <p>Descrição: Um aparelho para entusiastas da área de segurança cibernética cujo intuito é desenvolver suas habilidades usando o hardware hacking.</p>
         <p>Preço: R$320,00</p>
-        <button onclick="adicionaraocarrinho('Flipper zero')">Adicionar ao Carrinho</button>
+        <button onclick="adicionarAoCarrinho('Flipper Zero', 320.00, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvxWU_NCrAI571bRMdTnhoCh8SA5sI17gP1w&s')">Adicionar ao Carrinho</button>
       </div>
     </section>
 
     <section id="Carrinho">
       <h2>Seu Carrinho</h2>
-      <!-- Aqui serão listados os itens do carrinho dinamicamente -->
       <div class="item-carrinho">
       </div>
-      <h3>Total: </h3>
+      <h3>Total: <span id="total-carrinho">R$ 0,00</span></h3>
     </section>
   </main>
 
@@ -62,6 +57,7 @@
     <p>&copy; 2024 Mundo da Defesa e Ataque. Todos os direitos reservados.</p>
   </footer>
 
-  <script src="script.js"></script</body>
+  <script src="script.js"></script>
+</body>
 
 </html>
