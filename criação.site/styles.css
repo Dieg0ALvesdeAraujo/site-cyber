@@ -1,36 +1,22 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
 }
-
 header {
-    background-color: #000000;
-    color: #fff;
-    padding: 1em 0;
-    text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
 }
-
 main {
-    padding: 1em;
-    margin: 0 auto;
-    padding: #fff;
-    background-color: #fff;
+  padding: 1em;
+  margin: 0 auto;
+  background-color: #fff;
 }
-
 section {
-    margin-bottom: 3em;
+  margin-bottom: 3em;
 }
-
-form {
-    margin-bottom: 1em;
-}
-
-label {
-    display: block;
-    margin-bottom: 0.5em;
-}
-
 button {
   padding: 0.5em 1em;
   font-size: 1em;
@@ -41,15 +27,24 @@ button {
   transition: background-color 0.3s ease;
 }
 
-button {
-    padding: 0.5em 1em;
-    font-size: 1em;
-    cursor: pointer;
-    background-color: #0056b3
-    color: #fff;
-    border: none;
+button:hover {
+  background-color: #003f80;
+}
+.item-carrinho {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
-button:hover {
-    background-color: #0056b3;
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.item img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
 }
